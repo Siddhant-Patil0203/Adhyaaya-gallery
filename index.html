@@ -22,10 +22,10 @@
     />
   </head>
   <body>
-    <!-- Adhyaaya'21 -->
-    <div class="main">
-      <h1>Adhyaaya'21</h1>
-      <p>
+    <!-- 1st page -->
+    <section class="page">
+      <h1 class="head-1">Memories</h1>
+      <p class="head-para">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
         perspiciatis accusamus corporis est. Recusandae blanditiis sit sunt
         earum porro ad? Mollitia aspernatur necessitatibus ut ea natus velit
@@ -34,25 +34,88 @@
         placeat maiores, saepe tempore exercitationem cumque debitis quod?
         Explicabo iure veniam maiores quae, ad eius.
       </p>
-      <img src="./images/mascot3.png" alt="mascot-ASU" />
-      <div class="mainBoxes fs"></div>
-      <div class="mainClose">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="100%"
-          height="100%"
-          fill="none"
+      <div class="card-container">
+        <a href="#main4"
+          ><div
+            class="card"
+            style="
+              --image: url('./images/2018-cover.jfif');
+              --angle: -5deg;
+              --x: 5%;
+              --y: 15%;
+              --caption: 'Adhyaaya, 2018';
+            "
+          ></div
+        ></a>
+
+        <a href="#main3">
+          <div
+            class="card"
+            style="
+              --image: url('./images/2019-cover.jpg');
+              --angle: -1deg;
+              --x: -10%;
+              --y: -20%;
+              --caption: 'Adhyaaya, 2019';
+            "
+          ></div
+        ></a>
+
+        <a href="#main2">
+          <div
+            class="card"
+            style="
+              --image: url('./images/2020-cover.jfif');
+              --angle: -4deg;
+              --x: -20%;
+              --y: 5%;
+              --caption: 'Adhyaaya, 2020';
+            "
+          ></div
+        ></a>
+
+        <a href="#main">
+          <div
+            class="card"
+            style="
+              --image: url('./images/2021-cover.jpeg');
+              --angle: 7deg;
+              --x: 10%;
+              --y: -7%;
+              --caption: 'Adhyaaya, 2021';
+            "
+          ></div
+        ></a>
+      </div>
+      <div class="all-buttons">
+        <a href="#main"
+          ><button class="cybr-btn">
+            2021<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">2021_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button></a
         >
-          <circle cx="30" cy="30" r="30" fill="#000" opacity="0.4" />
-          <path
-            d="M15,16L45,46 M45,16L15,46"
-            stroke="#000"
-            stroke-width="3.5"
-            opacity="0.5"
-          />
-          <path d="M15,15L45,45 M45,15L15,45" stroke="#fff" stroke-width="2" />
-        </svg>
+        <a href="#main2">
+          <button class="cybr-btn">
+            2020<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">2020_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button></a
+        >
+        <a href="#main3">
+          <button class="cybr-btn">
+            2019<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">2019_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button></a
+        >
+        <a href="#main4">
+          <button class="cybr-btn">
+            2018<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">2018_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button></a
+        >
       </div>
       <!-- SVG CODE for background -->
       <svg class="main1" width="100%" height="100%">
@@ -71,11 +134,75 @@
 
         <rect class="m1Bg" fill="url(#grad2)" width="100%" height="100%" />
       </svg>
-    </div>
+
+      <div class="scrolldown">
+        <div class="chevrons">
+          <div class="chevrondown"></div>
+          <div class="chevrondown"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Adhyaaya'21 -->
+    <section class="page" id="sec1">
+      <div class="main" id="main">
+        <h1>Adhyaaya'21</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          perspiciatis accusamus corporis est. Recusandae blanditiis sit sunt
+          earum porro ad? Mollitia aspernatur necessitatibus ut ea natus velit
+          dolor temporibus quaerat. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ex fugit laborum perspiciatis fuga, architecto alias
+          placeat maiores, saepe tempore exercitationem cumque debitis quod?
+          Explicabo iure veniam maiores quae, ad eius.
+        </p>
+        <img src="./images/mascot3.png" alt="mascot-ASU" />
+        <div class="mainBoxes fs"></div>
+        <div class="mainClose">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            height="100%"
+            fill="none"
+          >
+            <circle cx="30" cy="30" r="30" fill="#000" opacity="0.4" />
+            <path
+              d="M15,16L45,46 M45,16L15,46"
+              stroke="#000"
+              stroke-width="3.5"
+              opacity="0.5"
+            />
+            <path
+              d="M15,15L45,45 M45,15L15,45"
+              stroke="#fff"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <!-- SVG CODE for background -->
+        <svg class="main1" width="100%" height="100%">
+          <defs>
+            <linearGradient id="grad2" x1="50%" y1="0%" x2="50%" y2="100%">
+              <stop
+                offset="25%"
+                style="stop-color: rgb(0, 238, 255); stop-opacity: 0.1"
+              />
+              <stop
+                offset="99%"
+                style="stop-color: rgb(255, 0, 255); stop-opacity: 0.2"
+              />
+            </linearGradient>
+          </defs>
+
+          <rect class="m1Bg" fill="url(#grad2)" width="100%" height="100%" />
+        </svg>
+      </div>
+    </section>
 
     <!-- Adhyaaya'20 -->
-    <section class="test11">
-      <div class="main2">
+    <section class="page" id="sec2">
+      <div class="main2" id="main2">
         <h1>Adhyaaya'20</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -131,8 +258,8 @@
     </section>
 
     <!-- Adhyaaya'19 -->
-    <section class="test11">
-      <div class="main3">
+    <section class="page" id="sec3">
+      <div class="main3" id="main3">
         <h1>Adhyaaya'19</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -188,8 +315,8 @@
     </section>
 
     <!-- Adhyaaya'18 -->
-    <section class="test11">
-      <div class="main4">
+    <section class="page" id="sec4 ">
+      <div class="main4" id="main4">
         <h1>Adhyaaya'18</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
@@ -246,6 +373,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

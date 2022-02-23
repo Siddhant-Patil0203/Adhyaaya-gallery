@@ -1,3 +1,6 @@
+// Full Page Scroll
+
+//Gallery
 var currentImg = undefined,
   currentImgProps = { x: 0, y: 0 },
   isZooming = false,
@@ -5,10 +8,9 @@ var currentImg = undefined,
   mouse = { x: 0, y: 0 },
   delayedPlay;
 
-// Adhyaaya'21
 for (var i = 0; i < 12; i++) {
   if (i % 4 == 0) column++;
-
+  // Adhyaaya'21
   var b = document.createElement("div");
   $(".mainBoxes").append(b);
 
