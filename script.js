@@ -126,7 +126,7 @@ window.onload = function () {
       rotationZ: 10,
     })
     .set(".mainBoxes2", {
-      left: "45%",
+      left: "40%",
       xPercent: -50,
       width: 1200,
       rotationX: 14,
@@ -227,7 +227,7 @@ window.onload = function () {
               {
                 duration: 0.5,
                 scale: 1,
-                left: "45%",
+                left: "40%",
                 width: 1200,
                 rotationX: 14,
                 rotationY: 15,
@@ -361,7 +361,7 @@ window.onload = function () {
               {
                 duration: 0.5,
                 scale: 1,
-                left: "45%",
+                left: "40%",
                 width: 1200,
                 rotationX: 14,
                 rotationY: 15,
