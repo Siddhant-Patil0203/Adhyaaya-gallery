@@ -37,7 +37,9 @@ div {
 }
 
 .main,
-.main2 {
+.main2,
+.main3,
+.main4 {
   position: relative;
 }
 
@@ -48,8 +50,9 @@ div {
   color: #fff;
 }
 
-/* page1 */
-.main h1 {
+/* Adhyaaya'21 - Adhyaaya'19 */
+.main h1,
+.main3 h1 {
   position: absolute;
   text-align: left;
   color: #fff;
@@ -59,7 +62,8 @@ div {
   font-weight: 100;
 }
 
-.main p {
+.main p,
+.main3 p {
   position: absolute;
   text-align: left;
   color: #fff;
@@ -71,15 +75,17 @@ div {
   text-align: justify;
 }
 
-.main img {
+.main img,
+.main3 img {
   position: absolute;
   bottom: 60px;
   width: 100px;
   left: 150px;
 }
 
-/* page2 */
-.main2 h1 {
+/* Adhyaaya'20 - Adhyaaya'18 */
+.main2 h1,
+.main4 h1 {
   position: absolute;
   text-align: right;
   color: #fff;
@@ -90,7 +96,8 @@ div {
   right: 0%;
 }
 
-.main2 p {
+.main2 p,
+.main4 p {
   position: absolute;
   text-align: right;
   color: #fff;
@@ -103,7 +110,8 @@ div {
   right: 0%;
 }
 
-.main2 img {
+.main2 img,
+.main4 img {
   position: absolute;
   bottom: 60px;
   width: 100px;
