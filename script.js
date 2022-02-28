@@ -18,7 +18,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2021/" + i + ".jpeg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -50,7 +50,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2020/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -82,7 +82,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2019/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -114,7 +114,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2018/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -148,7 +148,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2021/" + i + ".jpeg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -180,7 +180,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2020/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -212,7 +212,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2019/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -244,7 +244,7 @@ for (var i = 0; i < 12; i++) {
 
     gsap.set(b, {
       attr: { id: "b" + i, class: "photoBox pb-col" + column },
-      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundImage: "url(./images/Adhyaaya_2018/" + i + ".jpg)",
       backgroundSize: "cover",
       backgroundPosition: "center",
       overflow: "hidden",
@@ -659,7 +659,7 @@ window.onload = function () {
                 height: "300px",
                 borderRadius: 0,
                 x: 0,
-                top: 0,
+                top: 100,
                 y: 0,
                 scale: 1,
                 opacity: 1,
@@ -939,7 +939,7 @@ window.onload = function () {
   if (!!("ontouchstart" in window)) {
     console.log("touch device!");
     mouse.x = window.innerWidth - 50;
-    mouse.y = 60;
+    mouse.y = 500;
   } else {
     $(".main").on("mousemove", function (e) {
       mouse.x = e.x;
