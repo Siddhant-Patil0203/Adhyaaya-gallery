@@ -452,7 +452,8 @@ div {
   box-sizing: border-box;
   margin-bottom: 16px;
   left: calc(100% / 2 - 0px);
-  bottom: 100px;
+  bottom: 5vh;
+  transform: translate(-50%, -50%);
 }
 
 .scrolldown::before {
@@ -623,8 +624,9 @@ div {
     grid-template-columns: auto auto;
     position: absolute;
     left: calc(100% / 2 - 185px);
-    bottom: -60vh;
-    width: 100vw;
+    bottom: 10vh;
+    width: 90vw;
+    height: max-content;
     grid-template-rows: max-content;
   }
   .cybr-btn {
@@ -633,20 +635,27 @@ div {
   .card-container {
     position: absolute;
     width: 65vmin;
-    height: 80vmin;
+    height: 70vmin;
     left: calc(100% / 2 - 120px);
     right: 20px;
-    margin-top: 100px;
+    margin-top: 12vh;
     z-index: 1;
   }
+  .head-1 {
+    margin-top: 6vh;
+  }
   .main h1,
-  .main3 h1 {
+  .main2 h1,
+  .main3 h1,
+  .main4 h1 {
     left: calc(100% / 2 - 170px);
     font-size: 1.8rem;
   }
 
   .main p,
-  .main3 p {
+  .main2 p,
+  .main3 p,
+  .main4 p {
     margin: 140px 20px;
     width: 90vw;
     text-align: justify;

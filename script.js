@@ -9,9 +9,10 @@ var currentImg = undefined,
   delayedPlay;
 
 for (var i = 0; i < 12; i++) {
-  if (i % 4 == 0) column++;
-  // Adhyaaya'21
   if (window.innerWidth <= 700) {
+    //Mobile View
+    // Adhyaaya'21
+    if (i % 8 == 0) column++;
     var b = document.createElement("div");
     $(".mainBoxes").append(b);
 
@@ -54,8 +55,8 @@ for (var i = 0; i < 12; i++) {
       backgroundPosition: "center",
       overflow: "hidden",
       x: [60, 240, 300][column],
-      width: 400,
-      height: 640,
+      width: 300,
+      height: 340,
       borderRadius: 20,
       scale: 0.5,
       zIndex: 1,
@@ -86,8 +87,8 @@ for (var i = 0; i < 12; i++) {
       backgroundPosition: "center",
       overflow: "hidden",
       x: [60, 280, 500][column],
-      width: 400,
-      height: 640,
+      width: 300,
+      height: 340,
       borderRadius: 20,
       scale: 0.5,
       zIndex: 1,
@@ -118,8 +119,8 @@ for (var i = 0; i < 12; i++) {
       backgroundPosition: "center",
       overflow: "hidden",
       x: [60, 280, 500][column],
-      width: 400,
-      height: 640,
+      width: 300,
+      height: 340,
       borderRadius: 20,
       scale: 0.5,
       zIndex: 1,
@@ -139,6 +140,9 @@ for (var i = 0; i < 12; i++) {
       )
       .progress((i % 4) / 4);
   } else {
+    //PC View
+    // Adhyaaya'21
+    if (i % 4 == 0) column++;
     var b = document.createElement("div");
     $(".mainBoxes").append(b);
 
@@ -335,6 +339,7 @@ function playBoxes() {
 }
 
 window.onload = function () {
+  //Mobile View -- Onload
   if (window.innerWidth <= 700) {
     var _tl = gsap
       .timeline({ onStart: playBoxes })
@@ -345,10 +350,10 @@ window.onload = function () {
 
       .set(".photoBox", { opacity: 1, cursor: "pointer" })
       .set(".mainBoxes", {
-        left: "75%",
+        left: "40%",
         bottom: "0px",
         xPercent: -50,
-        width: 1200,
+        width: "140vw",
         height: "50vh",
         rotationX: 0,
         rotationY: 0,
@@ -356,27 +361,33 @@ window.onload = function () {
       })
       .set(".mainBoxes2", {
         left: "40%",
+        bottom: "0px",
         xPercent: -50,
-        width: 1200,
-        rotationX: 14,
-        rotationY: 15,
-        rotationZ: -10,
+        width: "140vw",
+        height: "50vh",
+        rotationX: 0,
+        rotationY: 0,
+        rotationZ: 0,
       })
       .set(".mainBoxes3", {
-        left: "75%",
+        left: "40%",
+        bottom: "0px",
         xPercent: -50,
-        width: 1200,
-        rotationX: 14,
-        rotationY: -15,
-        rotationZ: 10,
+        width: "140vw",
+        height: "50vh",
+        rotationX: 0,
+        rotationY: 0,
+        rotationZ: 0,
       })
       .set(".mainBoxes4", {
         left: "40%",
+        bottom: "0px",
         xPercent: -50,
-        width: 1200,
-        rotationX: 14,
-        rotationY: 15,
-        rotationZ: -10,
+        width: "140vw",
+        height: "50vh",
+        rotationX: 0,
+        rotationY: 0,
+        rotationZ: 0,
       })
       .set(".mainClose", {
         autoAlpha: 0,
@@ -411,6 +422,7 @@ window.onload = function () {
         0.2
       );
   } else {
+    //PC View
     var _tl = gsap
       .timeline({ onStart: playBoxes })
       .set(".main", { perspective: 800 })
@@ -521,8 +533,10 @@ window.onload = function () {
       .to(".photoBox", { duration: 0.5, opacity: 1, ease: "power2.inOut" }, 0);
   });
 
+  //ON Image Click
   $(".photoBox").on("click", function (e) {
     if (window.innerWidth <= 700) {
+      // Mobile View
       if (!isZooming) {
         //only tween if photoBox isn't currently zooming
 
@@ -544,11 +558,12 @@ window.onload = function () {
               {
                 duration: 0.5,
                 scale: 1,
-                left: "75%",
-                width: 1200,
-                rotationX: 14,
-                rotationY: -15,
-                rotationZ: 10,
+                left: "40%",
+                width: "140vw",
+                height: "50vh",
+                rotationX: 0,
+                rotationY: 0,
+                rotationZ: 0,
                 overwrite: true,
               },
               0
@@ -559,10 +574,11 @@ window.onload = function () {
                 duration: 0.5,
                 scale: 1,
                 left: "40%",
-                width: 1200,
-                rotationX: 14,
-                rotationY: 15,
-                rotationZ: -10,
+                width: "140vw",
+                height: "50vh",
+                rotationX: 0,
+                rotationY: 0,
+                rotationZ: 0,
                 overwrite: true,
               },
               0
@@ -572,11 +588,12 @@ window.onload = function () {
               {
                 duration: 0.5,
                 scale: 1,
-                left: "75%",
-                width: 1200,
-                rotationX: 14,
-                rotationY: -15,
-                rotationZ: 10,
+                left: "40%",
+                width: "140vw",
+                height: "50vh",
+                rotationX: 0,
+                rotationY: 0,
+                rotationZ: 0,
                 overwrite: true,
               },
               0
@@ -587,10 +604,11 @@ window.onload = function () {
                 duration: 0.5,
                 scale: 1,
                 left: "40%",
-                width: 1200,
-                rotationX: 14,
-                rotationY: 15,
-                rotationZ: -10,
+                width: "140vw",
+                height: "50vh",
+                rotationX: 0,
+                rotationY: 0,
+                rotationZ: 0,
                 overwrite: true,
               },
               0
@@ -604,8 +622,8 @@ window.onload = function () {
               currentImg,
               {
                 duration: 0.6,
-                width: 400,
-                height: 640,
+                width: 300,
+                height: 340,
                 borderRadius: 20,
                 x: currentImgProps.x,
                 y: currentImgProps.y,
@@ -719,6 +737,7 @@ window.onload = function () {
         }
       }
     } else {
+      //PC view
       if (!isZooming) {
         //only tween if photoBox isn't currently zooming
 
