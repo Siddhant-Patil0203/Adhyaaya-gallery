@@ -11,132 +11,261 @@ var currentImg = undefined,
 for (var i = 0; i < 12; i++) {
   if (i % 4 == 0) column++;
   // Adhyaaya'21
-  var b = document.createElement("div");
-  $(".mainBoxes").append(b);
+  if (window.innerWidth <= 700) {
+    var b = document.createElement("div");
+    $(".mainBoxes").append(b);
 
-  gsap.set(b, {
-    attr: { id: "b" + i, class: "photoBox pb-col" + column },
-    backgroundImage: "url(./images/" + i + ".jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    overflow: "hidden",
-    x: [60, 280, 500][column],
-    width: 400,
-    height: 640,
-    borderRadius: 20,
-    scale: 0.5,
-    zIndex: 1,
-  });
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 300,
+      height: 340,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
 
-  b.tl = gsap
-    .timeline({ paused: true, repeat: -1 })
-    .fromTo(
-      b,
-      { y: [-575, 800, 800][column], rotation: -0.05 },
-      {
-        duration: [40, 35, 26][column],
-        y: [800, -575, -575][column],
-        rotation: 0.05,
-        ease: "none",
-      }
-    )
-    .progress((i % 4) / 4);
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
 
-  // Adhyaaya'20
-  var b = document.createElement("div");
-  $(".mainBoxes2").append(b);
+    // Adhyaaya'20
+    var b = document.createElement("div");
+    $(".mainBoxes2").append(b);
 
-  gsap.set(b, {
-    attr: { id: "b" + i, class: "photoBox pb-col" + column },
-    backgroundImage: "url(./images/" + i + ".jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    overflow: "hidden",
-    x: [60, 280, 500][column],
-    width: 400,
-    height: 640,
-    borderRadius: 20,
-    scale: 0.5,
-    zIndex: 1,
-  });
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 240, 300][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
 
-  b.tl = gsap
-    .timeline({ paused: true, repeat: -1 })
-    .fromTo(
-      b,
-      { y: [-575, 800, 800][column], rotation: -0.05 },
-      {
-        duration: [40, 35, 26][column],
-        y: [800, -575, -575][column],
-        rotation: 0.05,
-        ease: "none",
-      }
-    )
-    .progress((i % 4) / 4);
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
 
-  // Adhyaaya'19
-  var b = document.createElement("div");
-  $(".mainBoxes3").append(b);
+    // Adhyaaya'19
+    var b = document.createElement("div");
+    $(".mainBoxes3").append(b);
 
-  gsap.set(b, {
-    attr: { id: "b" + i, class: "photoBox pb-col" + column },
-    backgroundImage: "url(./images/" + i + ".jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    overflow: "hidden",
-    x: [60, 280, 500][column],
-    width: 400,
-    height: 640,
-    borderRadius: 20,
-    scale: 0.5,
-    zIndex: 1,
-  });
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
 
-  b.tl = gsap
-    .timeline({ paused: true, repeat: -1 })
-    .fromTo(
-      b,
-      { y: [-575, 800, 800][column], rotation: -0.05 },
-      {
-        duration: [40, 35, 26][column],
-        y: [800, -575, -575][column],
-        rotation: 0.05,
-        ease: "none",
-      }
-    )
-    .progress((i % 4) / 4);
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
 
-  // Adhyaaya'18
-  var b = document.createElement("div");
-  $(".mainBoxes4").append(b);
+    // Adhyaaya'18
+    var b = document.createElement("div");
+    $(".mainBoxes4").append(b);
 
-  gsap.set(b, {
-    attr: { id: "b" + i, class: "photoBox pb-col" + column },
-    backgroundImage: "url(./images/" + i + ".jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    overflow: "hidden",
-    x: [60, 280, 500][column],
-    width: 400,
-    height: 640,
-    borderRadius: 20,
-    scale: 0.5,
-    zIndex: 1,
-  });
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
 
-  b.tl = gsap
-    .timeline({ paused: true, repeat: -1 })
-    .fromTo(
-      b,
-      { y: [-575, 800, 800][column], rotation: -0.05 },
-      {
-        duration: [40, 35, 26][column],
-        y: [800, -575, -575][column],
-        rotation: 0.05,
-        ease: "none",
-      }
-    )
-    .progress((i % 4) / 4);
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
+  } else {
+    var b = document.createElement("div");
+    $(".mainBoxes").append(b);
+
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
+
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
+
+    // Adhyaaya'20
+    var b = document.createElement("div");
+    $(".mainBoxes2").append(b);
+
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
+
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
+
+    // Adhyaaya'19
+    var b = document.createElement("div");
+    $(".mainBoxes3").append(b);
+
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
+
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
+
+    // Adhyaaya'18
+    var b = document.createElement("div");
+    $(".mainBoxes4").append(b);
+
+    gsap.set(b, {
+      attr: { id: "b" + i, class: "photoBox pb-col" + column },
+      backgroundImage: "url(./images/" + i + ".jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      overflow: "hidden",
+      x: [60, 280, 500][column],
+      width: 400,
+      height: 640,
+      borderRadius: 20,
+      scale: 0.5,
+      zIndex: 1,
+    });
+
+    b.tl = gsap
+      .timeline({ paused: true, repeat: -1 })
+      .fromTo(
+        b,
+        { y: [-575, 800, 800][column], rotation: -0.05 },
+        {
+          duration: [40, 35, 26][column],
+          y: [800, -575, -575][column],
+          rotation: 0.05,
+          ease: "none",
+        }
+      )
+      .progress((i % 4) / 4);
+  }
 }
 
 function pauseBoxes(b) {
@@ -216,14 +345,14 @@ window.onload = function () {
 
       .set(".photoBox", { opacity: 1, cursor: "pointer" })
       .set(".mainBoxes", {
-        left: "20%",
+        left: "75%",
         bottom: "0px",
         xPercent: -50,
-        width: 800,
+        width: 1200,
         height: "50vh",
-        rotationX: 14,
-        rotationY: -15,
-        rotationZ: 10,
+        rotationX: 0,
+        rotationY: 0,
+        rotationZ: 0,
       })
       .set(".mainBoxes2", {
         left: "40%",
