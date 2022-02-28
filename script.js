@@ -206,78 +206,155 @@ function playBoxes() {
 }
 
 window.onload = function () {
-  var _tl = gsap
-    .timeline({ onStart: playBoxes })
-    .set(".main", { perspective: 800 })
-    .set(".main2", { perspective: 800 })
-    .set(".main3", { perspective: 800 })
-    .set(".main4", { perspective: 800 })
+  if (window.innerWidth <= 700) {
+    var _tl = gsap
+      .timeline({ onStart: playBoxes })
+      .set(".main", { perspective: 800 })
+      .set(".main2", { perspective: 800 })
+      .set(".main3", { perspective: 800 })
+      .set(".main4", { perspective: 800 })
 
-    .set(".photoBox", { opacity: 1, cursor: "pointer" })
-    .set(".mainBoxes", {
-      left: "75%",
-      xPercent: -50,
-      width: 1200,
-      rotationX: 14,
-      rotationY: -15,
-      rotationZ: 10,
-    })
-    .set(".mainBoxes2", {
-      left: "40%",
-      xPercent: -50,
-      width: 1200,
-      rotationX: 14,
-      rotationY: 15,
-      rotationZ: -10,
-    })
-    .set(".mainBoxes3", {
-      left: "75%",
-      xPercent: -50,
-      width: 1200,
-      rotationX: 14,
-      rotationY: -15,
-      rotationZ: 10,
-    })
-    .set(".mainBoxes4", {
-      left: "40%",
-      xPercent: -50,
-      width: 1200,
-      rotationX: 14,
-      rotationY: 15,
-      rotationZ: -10,
-    })
-    .set(".mainClose", {
-      autoAlpha: 0,
-      width: 60,
-      height: 60,
-      left: -30,
-      top: -31,
-      pointerEvents: "none",
-    })
-    .fromTo(
-      ".main",
-      { autoAlpha: 0 },
-      { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
-      0.2
-    )
-    .fromTo(
-      ".main2",
-      { autoAlpha: 0 },
-      { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
-      0.2
-    )
-    .fromTo(
-      ".main3",
-      { autoAlpha: 0 },
-      { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
-      0.2
-    )
-    .fromTo(
-      ".main4",
-      { autoAlpha: 0 },
-      { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
-      0.2
-    );
+      .set(".photoBox", { opacity: 1, cursor: "pointer" })
+      .set(".mainBoxes", {
+        left: "20%",
+        bottom: "0px",
+        xPercent: -50,
+        width: 800,
+        height: "50vh",
+        rotationX: 14,
+        rotationY: -15,
+        rotationZ: 10,
+      })
+      .set(".mainBoxes2", {
+        left: "40%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: 15,
+        rotationZ: -10,
+      })
+      .set(".mainBoxes3", {
+        left: "75%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: -15,
+        rotationZ: 10,
+      })
+      .set(".mainBoxes4", {
+        left: "40%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: 15,
+        rotationZ: -10,
+      })
+      .set(".mainClose", {
+        autoAlpha: 0,
+        width: 60,
+        height: 60,
+        left: -30,
+        top: -31,
+        pointerEvents: "none",
+      })
+      .fromTo(
+        ".main",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main2",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main3",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main4",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      );
+  } else {
+    var _tl = gsap
+      .timeline({ onStart: playBoxes })
+      .set(".main", { perspective: 800 })
+      .set(".main2", { perspective: 800 })
+      .set(".main3", { perspective: 800 })
+      .set(".main4", { perspective: 800 })
+
+      .set(".photoBox", { opacity: 1, cursor: "pointer" })
+      .set(".mainBoxes", {
+        left: "75%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: -15,
+        rotationZ: 10,
+      })
+      .set(".mainBoxes2", {
+        left: "40%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: 15,
+        rotationZ: -10,
+      })
+      .set(".mainBoxes3", {
+        left: "75%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: -15,
+        rotationZ: 10,
+      })
+      .set(".mainBoxes4", {
+        left: "40%",
+        xPercent: -50,
+        width: 1200,
+        rotationX: 14,
+        rotationY: 15,
+        rotationZ: -10,
+      })
+      .set(".mainClose", {
+        autoAlpha: 0,
+        width: 60,
+        height: 60,
+        left: -30,
+        top: -31,
+        pointerEvents: "none",
+      })
+      .fromTo(
+        ".main",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main2",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main3",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      )
+      .fromTo(
+        ".main4",
+        { autoAlpha: 0 },
+        { duration: 0.6, ease: "power2.inOut", autoAlpha: 1 },
+        0.2
+      );
+  }
 
   $(".photoBox").on("mouseenter", function (e) {
     console.log($(e.currentTarget).hasClass("pb-col0"));
